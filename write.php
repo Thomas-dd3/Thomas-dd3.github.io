@@ -10,7 +10,7 @@ $prevnames = file_get_contents('names.txt');
 
 $prevnames .= "\n" . $_POST['name'];
 
-file_put_contents('names.txt', $prevnames);
+//file_put_contents('names.txt', $prevnames);
 
 
 echo "Thanks!";
