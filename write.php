@@ -6,9 +6,9 @@
  * Time: 4:48 PM
  */
 
-$prevnames = file_get_contents('names.txt');
+//$prevnames = file_get_contents('names.txt');
 
-$prevnames .= "\n" . $_POST['name'];
+//$prevnames .= "\n" . $_POST['name'];
 
 //file_put_contents('names.txt', $prevnames);
 
