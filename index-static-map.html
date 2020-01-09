@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        Body {
+            font-family: Calibri;
+        }
+
+        h1 {
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            font-size: 26px;
+        }
+
+        h2 {
+            font-weight: 500;
+            /* max-width: 50%; */
+            font-size: 20px;
+        }
+
+        #title {
+            position: absolute;
+            top: 5px;
+            left: 5%;
+            max-width: 43%;
+            background-color: #f7f8f8ba;
+        }
+
+        .circleLegend {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .circleLegend div {
+            margin-left: 5px;
+        }
+
+        #legend {
+            position: absolute;
+            right: 10px;
+            bottom: 2%;
+            background-color: #f7f8f8ba;
+        }
+
+    </style>
+</head>
+<body style="margin: 0; padding: 0; top: 0; left: 0;">
+
+<iframe width="100%" height="580" frameborder="0"
+        src="https://thomas-dd3-carto.carto.com/builder/5dcd9ec1-a1fd-4475-aad5-150049387a90/embed" allowfullscreen
+        webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<div id="title">
+    <h1>Can you see East Nanging Road?</h1>
+    <h2>Map showing the commercial centers of Shanghai, based on some points of interest from cendus dataset (unknown
+        year).</h2>
+</div>
+
+<div id="legend">
+    <div class="circleLegend">
+        <svg height="20" width="25">
+            <circle cx="10" cy="10" r="9" fill="#ffb33680" />
+        </svg>
+        <div>shops</div>
+    </div>
+
+    <div class="circleLegend">
+        <svg height="20" width="25">
+            <circle cx="10" cy="10" r="9" fill="#d040ff80" />
+        </svg>
+        <div>restaurants</div>
+    </div>
+
+    <div class="circleLegend">
+        <svg height="20" width="25">
+            <circle cx="10" cy="10" r="9" fill="#54ff2580" />
+        </svg>
+        <div>entertainement and movie theaters</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    letter-spacing: 0.5px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+
+}
+
+.top5 {
+    font-size: 21px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.nbR {
+    margin-top: 2px;
+}
+
+
+ol {
+    margin-top: 0;
+    font-weight: 300;
+}
+li {
+    margin-bottom: 10px;
+}
+
+#top5ratings {
+    bottom: 40px;
+    right: 20px;
+}
+
+#top5reviews {
+    top: 20px;
+    right: 20px;
+}
+
+#titre {
+    position: absolute;
+    top: 0.5%;
+    left: 5%;
+    max-width: 40%;
+}
+
+#avNbReviews {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    background-color: #000000a3;
+    color: white;
+    /* border-radius: 100px; */
+    height: 20px;
+    padding: 5px 10px;
+}
+
+#legend {
+    position: absolute;
+    bottom: 0.5%;
+    left: 115px;
+}
+
+#source {
+    background-color: #ffffff80;
+}
+
+#legendAvNbReviews {
+    background-color: #000000a3;
+    color: white;
+    margin-bottom: 8px;
+    width: 240px;
+    text-align: center;
+    height: 23px;
+    padding-top: 3px;
+}
+
+.popupTop5{
+    position: absolute;
+    width: 325px;
+    /* height: 325px; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 15px;
+}
+
+#circleLegend div {
+    margin-left: 5px;
+}
+
+#circleLegend {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.mapboxgl-popup-content {
+    /* background: none; */
+    background-color: #000000a3;
+    color: white;
+    /* background-color: #f3f2f2; */
+    /* border: 1px black solid; */
+    border-radius: 100px;
+    height: 20px;
+    padding: 5px 10px;
+    margin-bottom: 9px;
+    box-shadow: none;
+}
+
+.mapboxgl-popup-tip{
+    border: none;
+}

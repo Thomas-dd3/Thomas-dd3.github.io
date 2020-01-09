@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>D3 js project</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+    <title>Display a popup on click</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 
+<div id="map"></div>
 
-<script rel="script" type="application/javascript" src="script.js"></script>
+
+<div id="titre">
+    <h1>Rome, good restaurant or smartphone addict?</h1>
+    <h2>Average number of reviews of restaurants on TripAdvisor for 31 cities in Europe.</h2>
+</div>
+
+<div id="legend">
+    <div id="circleLegend">
+        <svg height="20" width="25">
+            <circle cx="10" cy="10" r="10" fill="#ff0a0ab3" />
+        </svg>
+        <div>150</div>
+    </div>
+    <div id="legendAvNbReviews">
+        City: Average number of reviews
+    </div>
+    <div id="source">
+        Source: Dataset kaggle "TripAdvisor Restaurants Info for 31 Euro-Cities", scrapping on 2017.
+    </div>
+</div>
+
+
+<div id="avNbReviews">
+    Rome: 293.9
+</div>
+
+<div id="top5ratings" class="popupTop5" style="">
+    <h3 class="top5">Top 5</h3>
+    <h3 class="nbR">Rating, then number of reviews</h3>
+    <ol>
+        <li>Pane e Salame, 5.0 &nbsp;(4867.0)</li>
+        <li>Pizza Zizza Caffetteria Birreria Desserteria, 5.0 &nbsp;(1975.0)</li>
+        <li>Two Sizes, 5.0 &nbsp;(1186.0)</li>
+        <li>Bread-in, 5.0 &nbsp;(666.0)</li>
+        <li>L'uliveto Shop, 5.0 &nbsp;(489.0)</li>
+    </ol>
+</div>
+
+<div id="top5reviews" class="popupTop5" style="">
+    <h3 class="top5">Top 5</h3>
+    <h3 class="nbR">Number of reviews</h3>
+    <ol>
+        <li>Grazia &amp; Graziella, 4.5 &nbsp;(10300.0)</li>
+        <li>Cantina e Cucina, 4.5 &nbsp;(8927.0)</li>
+        <li>Tonnarello, 4.5 &nbsp;(6574.0)</li>
+        <li>Ristorante Carlo Menta, 3.5 &nbsp;(6309.0)</li>
+        <li>Cajo e Gajo, 4.5 &nbsp;(6117.0)</li>
+    </ol>
+
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
